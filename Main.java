@@ -8,30 +8,15 @@ public class Main{
 
     public static void main(String[] args){
 
-        ArrayList<Integer> testDataSets = new ArrayList<>();
-        File inputTests = new File("testRuns.txt");
-        int randomSeed = 1;
+     int maxCoursesInSemester = 500;
+     int seed = 1;
+     int days = 6;
+     int timeSlots = 4;
+     int weeklyLecturesPerCourse = 2
+     int maxIterations = 4000;
+     HelperMethods helperMethods = new helperMethods("Test.Runs.txt",seed, days,timeSlots);
 
-        try {
-            Scanner fileScanner = new Scanner(inputTests);
-            
-        } catch (FileNotFoundException e) {
-            System.out.println("File not found");
-        }
-
-        HillClimbingAlgorithm hillClimbingAlgorithm = new HillClimbingAlgorithm(randomSeed);
-        SimulatedAnnealingAlgorithm simulatedAnnealingAlgorithm = new SimulatedAnnealingAlgorithm(randomSeed);
-
-        for(int i=0; i< testDataSets.length; i++){
-            
-
-        }
+     Helpermethods helperMethods = new Helpermethods("testRuns.txt", maxCoursesInSemester, seed, day, slot);
 
 
-        
-        
-
-        
-        
-    }
 }
