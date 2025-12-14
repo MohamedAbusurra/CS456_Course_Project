@@ -1,4 +1,4 @@
-interface NodeLike {
+interface CourseNodeLike {
     String getCourseId();
     int getSemester();
     int getInstructorId();
@@ -6,7 +6,7 @@ interface NodeLike {
 }
 
 
-class Node implements NodeLike{
+class CourseNode implements CourseNodeLike{
     private String courseId();
     
 }
