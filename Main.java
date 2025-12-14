@@ -30,7 +30,7 @@ public class Main{
 
 
      // Builds helper method obejct used to generate random intitial timetable for each test and prints and read tests from txt file
-     Helpermethods helperMethods = new Helpermethods("testRuns.txt", maxCoursesInSemester, seed, days, timeSlots);
+     HelperMethods helperMethods = new HelperMethods("testRuns.txt", maxCoursesInSemester, seed, days, timeSlots);
 
      // calls method to read tests from file and store them in an arraylist of strings
      LinkedList<CourseNode[]> tests = helperMethods.readTestsFromFile();
