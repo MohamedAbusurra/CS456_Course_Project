@@ -1,13 +1,12 @@
-public class Node {
+interface NodeLike {
+    String getCourseId();
+    int getSemester();
+    int getInstructorId();
 
-    String courseId;
-    int courseStudySemester;
-    int instructorId;
+}
 
-    public Node(String courseId, int courseStudySemester, int instructorId) {
-            this.courseId = courseId;
-            this.courseStudySemester = courseStudySemester;
-            this.instructorId = instructorId;
-    }
+
+class Node implements NodeLike{
+    private String courseId();
     
 }
