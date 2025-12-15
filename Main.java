@@ -75,7 +75,5 @@ public class Main{
         finalReport += s;
      }
      TextFileWriter.writeTextToFile("results.txt",finalReport);
-
-
-
+}
 }

@@ -5,7 +5,7 @@ import java.util.LinkedList;
 import java.util.Random;
 
 public class HelperMethods {
-     private String fileName;
+    private String fileName;
     private int n; // how many lactures
     private Random random;
     private int day;
