@@ -167,6 +167,32 @@ public class HelperMethods {
         return new int[] {hard, soft};
     }
 
+      public ArrayList<ArrayList<LinkedList<CourseNode>>> createEmptyTimetable() {
+
+        ArrayList<ArrayList<LinkedList<CourseNode>>> timetable = new ArrayList<>();
+
+        for (int dayy = 0; dayy < day; dayy++) {
+            ArrayList<LinkedList<CourseNode>> slots = new ArrayList<>();
+
+            for (int slott = 0; slott < slot; slott++) {
+                slots.add(new LinkedList<CourseNode>()); // empty
+            }
+
+            timetable.add(slots);
+        }
+
+        return timetable;
+    }
+
+       public ArrayList<ArrayList<LinkedList<CourseNode>>> genrate_initial_state(CourseNode[] state, int weekly_lacture) {
+
+        int best_h = 0;
+        ArrayList<ArrayList<LinkedList<CourseNode>>> best_timetable = null;
+
+        return best_timetable;
+    }
+
+
 
 
 }
