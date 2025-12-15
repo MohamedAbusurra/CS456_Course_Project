@@ -1,6 +1,7 @@
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.Random;
 
@@ -92,6 +93,78 @@ public class HelperMethods {
         }
 
         return allTests;
+    }
+
+
+     public int[] countConflicts(ArrayList<ArrayList<LinkedList<CourseNode>>> state) {
+        int hard = 0;
+        int soft = 0;
+
+        if (state == null) {
+               
+            return new int[] {0, 0};
+        }
+
+        int days = state.size();
+        for (int day = 0; day < days; day++) {
+            ArrayList<LinkedList<CourseNode>> slotsInDay = state.get(day);
+            if (slotsInDay == null)
+                continue;
+
+            java.util.Map<String, Integer> courseCountInDay = new java.util.HashMap<>();
+
+            int slots = slotsInDay.size();
+            for (int slot = 0; slot < slots; slot++) {
+                LinkedList<CourseNode> cell = slotsInDay.get(slot);
+                if (cell == null || cell.isEmpty())
+                    continue;
+
+                for (CourseNode c : cell) {
+                    if (c == null)
+                        continue;
+                    String cid = c.getCourseId();
+                    courseCountInDay.put(cid, courseCountInDay.getOrDefault(cid, 0) + 1);
+                }
+
+                int n = cell.size();
+                for (int i = 0; i < n; i++) {
+                    CourseNode a = cell.get(i);
+                    if (a == null)
+                        continue;
+
+                    for (int j = i + 1; j < n; j++) {
+                        CourseNode b = cell.get(j);
+                        if (b == null)
+                            continue;
+
+                        if (a.getInstructorId() == b.getInstructorId()) {
+                            hard++;
+                        }
+
+                        int sa = a.getSemester();
+                        int sb = b.getSemester();
+                        int diff = Math.abs(sa - sb);
+
+                        if (sa == sb) {
+                            hard++;
+                        } else {
+                            if (diff == 1 || diff == 2 || diff == 3) {
+                                soft++;
+                            }
+                        }
+                    }
+                }
+            }
+
+            for (java.util.Map.Entry<String, Integer> e : courseCountInDay.entrySet()) {
+                int count = e.getValue();
+                if (count > 1) {
+                    soft += (count - 1);
+                }
+            }
+        }
+
+        return new int[] {hard, soft};
     }
 
   
