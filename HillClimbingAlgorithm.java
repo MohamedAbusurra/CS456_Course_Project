@@ -50,9 +50,115 @@ public class HillClimbingAlgorithm {
     }
 
 
-    private void generateNeighbor(int){
+    private ArrayList<ArrayList<LinkedList<CourseNode>>> getNeighbor(
+        ArrayList<ArrayList<LinkedList<CourseNode>>> state,
+        int fitness) {
 
+    // Initialize the variable to track the lowest fitness found starting with the current fitness value.
+    int lowestFitnessFound = fitness;
+
+    // stores all possible neighbor states.
+    ArrayList<ArrayList<ArrayList<LinkedList<CourseNode>>>> possibleStates = new ArrayList<>();
+
+    // Stores the best possible states found (with the lowest fitness).
+    ArrayList<ArrayList<ArrayList<LinkedList<CourseNode>>>> bestPossibleStates = new ArrayList<>();
+
+    // Get the number of days in the schedule.
+    int days = state.size(); 
+    
+    // Get the number of slots per day.
+    int slotsPerDay = state.get(0).size(); 
+
+    // Loop through every cell in the schedule (each day and slot)
+    for (int day = 0; day < days; day++) {
+        for (int slot = 0; slot < slotsPerDay; slot++) {
+
+            // Get the list of courses(course nodes) for the current day and slot.
+            LinkedList<CourseNode> cell = state.get(day).get(slot);
+            
+            // If the cell is empty ( meaning there are no courses in this slot), skip iteration.
+            if (cell.isEmpty())
+                continue;
+
+            // Loop through all the courses in the current cell
+            for (int i = 0; i < cell.size(); i++) {
+                CourseNode course = cell.get(i);
+
+                // ===== 1) Move the course to a different slot on the same day =====
+                // Loop through all the available slots for the current day (excluding the current slot)
+                for (int newSlot = 0; newSlot < slotsPerDay; newSlot++) {
+                    // Skip if the new slot is the same as the current slot
+                    if (newSlot == slot)
+                        continue;
+
+                    // Create a copy of the current state to modify it without changing the original
+                    ArrayList<ArrayList<LinkedList<CourseNode>>> neighbor = copyState(state);
+
+                    // Remove the course from the current slot
+                    neighbor.get(day).get(slot).remove(i);
+
+                    // Add the course to the new slot on the same day
+                    neighbor.get(day).get(newSlot).add(course);
+
+                    // Calculate the fitness of the new state (after moving the course)
+                    int fitnessOfNeighbor = helperMethods.calculateHeuristic(neighbor);
+
+                    // If the fitness of this new state is lower than the previous best, store it.
+                    if (fitnessOfNeighbor < lowestFitnessFound) {
+                        lowestFitnessFound = fitnessOfNeighbor;
+                        // Add the neighbor state to possible states
+                        possibleStates.add(neighbor);  
+                    }
+                }
+
+                // ===== 2) Move the course to a different day with the same slot =====
+                // Loop through all the available days (excluding the current day)
+                for (int newDay = 0; newDay < days; newDay++) {
+                    // Skip if the new day is the same as the current day
+                    if (newDay == day)
+                        continue;
+
+                    // Create a copy of the current state to modify it
+                    ArrayList<ArrayList<LinkedList<CourseNode>>> neighbor = copyState(state);
+
+                    // Remove the course from the current day and slot
+                    neighbor.get(day).get(slot).remove(i);
+
+                    // Add the course to the same slot but on the new day
+                    neighbor.get(newDay).get(slot).add(course);
+
+                    // Calculate the fitness of the new state (after moving the course)
+                    int fitnessOfNeighbor = helperMethods.calculateHeuristic(neighbor);
+
+                    // If the fitness of this new state is better (lower) than the previous best, store it.
+                    if (fitnessOfNeighbor < lowestFitnessFound) {
+                        lowestFitnessFound = fitnessOfNeighbor;
+                        // Add the neighbor state to possible states.
+                        possibleStates.add(neighbor);  
+                    }
+                }
+            }
+        }
     }
+    // Iterare through all the possible neighbo states storing ones with same fitness function as best possible ones found.
+    for (ArrayList<ArrayList<LinkedList<CourseNode>>> neighbor : possibleStates) {
+        // Calculate the fitness of each possible neighbor
+        int fitnessOfNeighbor = helperMethods.calculateHeuristic(neighbor);
+
+        // If this state's fitness matches the lowest fitness found, it's one of the best possible states
+        if (fitnessOfNeighbor == lowestFitnessFound) {
+            bestPossibleStates.add(neighbor);
+        }
+    }
+
+    // If no equal or better states were found, return null 
+    if (bestPossibleStates.size() == 0)
+        return null;
+
+    // Randomly select one of the best possible states and return it.
+    int randomIndex = randomlySelectNeighbor.nextInt(bestPossibleStates.size());
+    return bestPossibleStates.get(randomIndex);
+}
 
     private void addresult(int conflict, int finalFitness, long time, int iteration) {
 
