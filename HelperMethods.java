@@ -189,7 +189,29 @@ public class HelperMethods {
         int best_h = 0;
         ArrayList<ArrayList<LinkedList<CourseNode>>> best_timetable = null;
 
-        return best_timetable;
+        for (int k = 0; k < 100; k++) {
+            ArrayList<ArrayList<LinkedList<CourseNode>>> timetable = createEmptyTimetable();
+            for (int i = 0; i < n; i++) {
+                for (int j = 0; j < weekly_lacture; j++) {
+                    int col = random.nextInt(slot);
+                    int row = random.nextInt(day);
+                    if (state[i] == null) {
+                        continue;
+                    }
+                    timetable.get(row).get(col).add(state[i]);
+                }
+            }
+            if (k == 0) {
+                best_timetable = timetable;
+                best_h = calculateHeuristic(timetable);
+            } else {
+                if (best_h > calculateHeuristic(timetable)) {
+                    best_timetable = timetable;
+                    best_h = calculateHeuristic(timetable);
+                }
+            }
+        }
+         return best_timetable;
     }
 
 
