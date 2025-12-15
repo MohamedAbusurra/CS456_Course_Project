@@ -167,5 +167,6 @@ public class HelperMethods {
         return new int[] {hard, soft};
     }
 
-  
+
+
 }
