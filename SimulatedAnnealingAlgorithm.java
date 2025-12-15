@@ -138,6 +138,7 @@ private void print_result(int it, int h, double t) {
 
     
     public void performSimulatedAnnealingSearch(){
+          long start = System.currentTimeMillis();
         int it = 0;
         double t = starting_temperature;
         int h_old = ob.calculateHeuristic(state);
@@ -150,6 +151,24 @@ private void print_result(int it, int h, double t) {
             ArrayList<ArrayList<LinkedList<CourseNode>>> old_row = arr; // it used only for backtracking if p not accpet it
             arr = getNeighbor(arr,h_old);
             int h_new = ob.calculateHeuristic(arr);
+
+            
+            if (h_new == 0) {
+                long end = System.currentTimeMillis();
+                long duration = end - start;
+                 finalConflicts = ob.countConflicts(arr);
+                //
+                final_taple = arr;
+                return;
+            }
+            if (it == max_iteritor) {
+                long end = System.currentTimeMillis();
+                long duration = end - start;
+                finalConflicts = ob.countConflicts(arr);
+                //
+                final_taple = arr;
+                return;
+            }
 
              int E = h_new - h_old;
             if (E > 0) {
