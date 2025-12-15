@@ -117,10 +117,53 @@ private ArrayList<ArrayList<LinkedList<CourseNode>>> getNeighbor(
     return possibleStates.get(randomIndex);
 }
 
+private void print_result(int it, int h, double t) {
+        System.out.println(it + ": " +  "  h = " + h + "  T= " + t);
+        if (h == 0) {
+            System.out.println("solved");
+        }
+        if (it == max_iteritor - 1) {
+            System.out.println("max iterations reached");
+        }
+    }
 
+  private boolean accept(double p) {
+        double u = random.nextDouble();
+        if (u < p) {
+            return true;
+        } else {
+            return false;
+        }
+    }
 
     
     public void performSimulatedAnnealingSearch(){
-        
+        int it = 0;
+        double t = starting_temperature;
+        int h_old = ob.calculateHeuristic(state);
+        ArrayList<ArrayList<LinkedList<CourseNode>>> arr = state;// all work in this array (updated always (rerendiring))
+
+        initialConflicts = ob.countConflicts(arr);
+
+         while (t > 0) {
+             t = t * cooling_rate; //  t = t * 0.95;
+            ArrayList<ArrayList<LinkedList<CourseNode>>> old_row = arr; // it used only for backtracking if p not accpet it
+            arr = getNeighbor(arr,h_old);
+            int h_new = ob.calculateHeuristic(arr);
+
+             int E = h_new - h_old;
+            if (E > 0) {
+                double x = (-E) / t;
+                double p = Math.exp(x);
+                if (accept(p)) {
+                    h_old = h_new;
+                } else {
+                    arr = old_row; // if its not accepted back to old rerdender (backtracking)
+                }
+
+            } else {
+                h_old = h_new;
+            }
     }
+}
 }
