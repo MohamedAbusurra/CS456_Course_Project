@@ -136,6 +136,20 @@ private void print_result(int it, int h, double t) {
         }
     }
 
+      private void addresult(int conflict , int final_h , long time , int it) {
+       result =
+            "test : " + test_it + "\n" +
+            "algorthim name: " + "SimulatedAnnealingAlgorithm" + "\n" +
+            "Initial Conflicts (hard/soft): " + initialConflicts[0] + "/" + initialConflicts[1] + "\n" +
+            "Final Conflicts (hard/soft): " + finalConflicts[0] + "/" + finalConflicts[1] + "\n" +
+            "Final Heuristic: " + final_h + "\n" +
+            "Execution Time (ms): " + time + "\n" +
+            "Iterations: " + it + "\n" +
+            "starting_temperature: " + starting_temperature + "\n" +
+             "cooling_rate: " + cooling_rate + "\n";
+    }
+
+
     
     public void performSimulatedAnnealingSearch(){
           long start = System.currentTimeMillis();
@@ -143,21 +157,31 @@ private void print_result(int it, int h, double t) {
         double t = starting_temperature;
         int h_old = ob.calculateHeuristic(state);
         ArrayList<ArrayList<LinkedList<CourseNode>>> arr = state;// all work in this array (updated always (rerendiring))
-
+         print_result(it++, h_old, t);
         initialConflicts = ob.countConflicts(arr);
+
+        if (h_old == 0) {
+             long end = System.currentTimeMillis();
+             long duration = end - start;
+            finalConflicts = ob.countConflicts(arr);
+             addresult(0,h_old,duration ,it);
+             final_taple = arr;
+            return;
+        }
 
          while (t > 0) {
              t = t * cooling_rate; //  t = t * 0.95;
             ArrayList<ArrayList<LinkedList<CourseNode>>> old_row = arr; // it used only for backtracking if p not accpet it
             arr = getNeighbor(arr,h_old);
             int h_new = ob.calculateHeuristic(arr);
+             print_result(it++, h_new, t);
 
             
             if (h_new == 0) {
                 long end = System.currentTimeMillis();
                 long duration = end - start;
                  finalConflicts = ob.countConflicts(arr);
-                //
+                 addresult(0,h_new,duration ,it);
                 final_taple = arr;
                 return;
             }
@@ -165,7 +189,7 @@ private void print_result(int it, int h, double t) {
                 long end = System.currentTimeMillis();
                 long duration = end - start;
                 finalConflicts = ob.countConflicts(arr);
-                //
+                 addresult(0,h_new,duration ,it);
                 final_taple = arr;
                 return;
             }
