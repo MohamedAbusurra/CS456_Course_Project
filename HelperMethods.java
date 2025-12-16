@@ -301,7 +301,29 @@ public class HelperMethods {
     }
 
 
+     public void printTimetable(ArrayList<ArrayList<LinkedList<CourseNode>>> timetable) {
 
+        for (int dayy = 0; dayy < day; dayy++) {
+            System.out.println("===== DAY " + dayy + " =====");
+
+            for (int slott = 0; slott < slot; slott++) {
+                LinkedList<CourseNode> list = timetable.get(dayy).get(slott);
+
+                System.out.print("Slot " + slott + ": ");
+
+                if (list.isEmpty()) {
+                    System.out.println("EMPTY");
+                } else {
+                    for (CourseNode node : list) {
+                        System.out.print(node.getCourseId() + " ");
+                    }
+                    System.out.println();
+                }
+            }
+
+            System.out.println();
+        }
+    }
 
 
 
