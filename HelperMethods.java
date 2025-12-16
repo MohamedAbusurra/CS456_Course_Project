@@ -183,15 +183,21 @@ public class HelperMethods {
 
             // "Two lectures of the same course on the same day"
             
-           // java.util.Map<String, Integer> courseCountInDay = new java.util.HashMap<>();
+            java.util.Map<String, Integer> courseCountInDay = new java.util.HashMap<>();
 
             for (int slot = 0; slot < slots; slot++) {
                 LinkedList<CourseNode> cell = slotsInDay.get(slot);
                 if (cell == null || cell.isEmpty())
                     continue;
 
-                
-              
+
+
+                for (CourseNode c : cell) {
+                    if (c == null)
+                        continue;
+                    String cid = c.getCourseId();
+                    courseCountInDay.put(cid, courseCountInDay.getOrDefault(cid, 0) + 1);
+                }
 
                
                 int n = cell.size();
@@ -233,6 +239,13 @@ public class HelperMethods {
 
            
             // Two lectures of the same course on the same day: +75
+
+            for (java.util.Map.Entry<String, Integer> e : courseCountInDay.entrySet()) {
+                int count = e.getValue();
+                if (count > 1) {
+                    penalty += (count - 1) * 75;
+                }
+            }
             
            
         }
