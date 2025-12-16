@@ -167,6 +167,79 @@ public class HelperMethods {
         return new int[] {hard, soft};
     }
 
+     public int calculateHeuristic(ArrayList<ArrayList<LinkedList<CourseNode>>> state) {
+           int penalty = 0;
+
+        if (state == null)
+            return 0;
+
+        int days = state.size(); // 6
+        for (int day = 0; day < days; day++) {
+            ArrayList<LinkedList<CourseNode>> slotsInDay = state.get(day);
+            if (slotsInDay == null)
+                continue;
+
+            int slots = slotsInDay.size(); //  4
+
+            // "Two lectures of the same course on the same day"
+            
+           // java.util.Map<String, Integer> courseCountInDay = new java.util.HashMap<>();
+
+            for (int slot = 0; slot < slots; slot++) {
+                LinkedList<CourseNode> cell = slotsInDay.get(slot);
+                if (cell == null || cell.isEmpty())
+                    continue;
+
+                
+              
+
+               
+                int n = cell.size();
+                for (int i = 0; i < n; i++) {
+                    CourseNode a = cell.get(i);
+                    if (a == null)
+                        continue;
+
+                    for (int j = i + 1; j < n; j++) {
+                        CourseNode b = cell.get(j);
+                        if (b == null)
+                            continue;
+
+                        //  Instructor double-booked
+                        if (a.getInstructorId() == b.getInstructorId()) {
+                            penalty += 1200;
+                        }
+
+                        int sa = a.getSemester();
+                        int sb = b.getSemester();
+                        int diff = Math.abs(sa - sb);
+
+                        // 2) Same year course overlapping
+                        if (sa == sb) {
+                            penalty += 1000;
+                        } else {
+                            // 3) Conflicts between courses one / two / three years apart
+                            if (diff == 1) {
+                                penalty += 150; // one year apart
+                            } else if (diff == 2) {
+                                penalty += 50; // two years apart
+                            } else if (diff == 3) {
+                                penalty += 25; // three years apart
+                            }
+                        }
+                    }
+                }
+            }
+
+           
+            // Two lectures of the same course on the same day: +75
+            
+           
+        }
+
+        return penalty;
+    }
+
       public ArrayList<ArrayList<LinkedList<CourseNode>>> createEmptyTimetable() {
 
         ArrayList<ArrayList<LinkedList<CourseNode>>> timetable = new ArrayList<>();
@@ -213,6 +286,8 @@ public class HelperMethods {
         }
          return best_timetable;
     }
+
+
 
 
 
