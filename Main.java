@@ -47,12 +47,12 @@ public class Main{
      for(CourseNode[] table : tests){
         System.out.println("test" + testNumberCounter);
         //generate initial state as a list of linked lists calling the helper method object method
-        ArrayList<ArrayList<LinkedList<CourseNode>>> result = helperMethods.generateInitialState();
+        ArrayList<ArrayList<LinkedList<CourseNode>>> result = helperMethods.generateInitialState(table,weeklyLecturesPerCourse);
         System.out.println("Simulated Annealing");
         // execute the test case with all possible starting temperature and cooling rate possibilities
         for (double temperature : startingTemperature){
             for(double rate : coolingRate){
-                  SimulatedAnnealingAlgorithm simulatedAnnealingAlgorithm = new SimulatedAnnealingAlgorithm(result, seed, maxIterations, temperature,rate);
+                  SimulatedAnnealingAlgorithm simulatedAnnealingAlgorithm = new SimulatedAnnealingAlgorithm(result, seed, maxIterations, temperature,rate,testNumberCounter);
                   simulatedAnnealingAlgorithm.solve();
                   //print results in the terminal
                   helperMethods.printTimetable(simulatedAnnealingAlgorithm.getFinalTable());

@@ -148,10 +148,16 @@ private void print_result(int it, int h, double t) {
             "starting_temperature: " + starting_temperature + "\n" +
              "cooling_rate: " + cooling_rate + "\n";
     }
+     public String getResults() {
+       return result;
+    }
+        public ArrayList<ArrayList<LinkedList<CourseNode>>> getFinalTable(){
+        return final_taple;
+    }
 
 
     
-    public void performSimulatedAnnealingSearch(){
+    public void solve(){
           long start = System.currentTimeMillis();
         int it = 0;
         double t = starting_temperature;

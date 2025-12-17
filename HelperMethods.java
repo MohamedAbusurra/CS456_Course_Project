@@ -270,7 +270,7 @@ public class HelperMethods {
         return timetable;
     }
 
-       public ArrayList<ArrayList<LinkedList<CourseNode>>> genrate_initial_state(CourseNode[] state, int weekly_lacture) {
+       public ArrayList<ArrayList<LinkedList<CourseNode>>> generateInitialState(CourseNode[] state, int weekly_lacture) {
 
         int best_h = 0;
         ArrayList<ArrayList<LinkedList<CourseNode>>> best_timetable = null;

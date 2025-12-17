@@ -161,7 +161,21 @@ public class HillClimbingAlgorithm {
 }
 
     private void addresult(int conflict, int finalFitness, long time, int iteration) {
+           result = "test : " + testNumber + "\n" +
+                "algorthim name: " + "HillClimbingAlgorithm" + "\n" +
+                  "Initial Conflicts (hard/soft): " + initialConflicts[0] + "/" + initialConflicts[1] + "\n" +
+                 "Final Conflicts (hard/soft): " + finalConflicts[0] + "/" + finalConflicts[1] + "\n" +
+                "Final Heuristic: " + finalFitness + "\n" +
+                "Execution Time (ms): " + time + "\n" +
+                "Iterations: " + iteration + "\n";
+    }
 
+    public String getResults() {
+        return result;
+    }
+
+    public ArrayList<ArrayList<LinkedList<CourseNode>>> getFinalTable() {
+        return finalTable;
     }
 
 
@@ -199,7 +213,7 @@ public class HillClimbingAlgorithm {
                 long end = System.currentTimeMillis();
                 long duration = end - start;
                 finalConflicts = helperMethods.countConflicts(finalTable);
-                addResult(0, currentStateHeuristic, duration, iteration);
+                addresult(0, currentStateHeuristic, duration, iteration);
                 finalTable = previousState;
                 break;
             }
