@@ -63,6 +63,7 @@ public class Main{
         //perform hill climbing search and print results in terminal and store results in list for adding to txt file later
         System.out.println("Hill CLimbing");
         HillClimbingAlgorithm hillClimbingAlgorithm = new HillClimbingAlgorithm(result,seed,testNumberCounter);
+        hillClimbingAlgorithm.performHillClimbingSearch();
         list.add(hillClimbingAlgorithm.getResults());
         helperMethods.printTimetable(hillClimbingAlgorithm.getFinalTable());
         testNumberCounter++;

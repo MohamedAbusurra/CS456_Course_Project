@@ -212,9 +212,9 @@ public class HillClimbingAlgorithm {
                 System.out.println("Solved");
                 long end = System.currentTimeMillis();
                 long duration = end - start;
+                finalTable = previousState;
                 finalConflicts = helperMethods.countConflicts(finalTable);
                 addresult(0, currentStateHeuristic, duration, iteration);
-                finalTable = previousState;
                 break;
             }
             // get the neighbor of state
@@ -224,19 +224,14 @@ public class HillClimbingAlgorithm {
             if (currentState == null) {
                 long end = System.currentTimeMillis();
                 long duration = end - start;
-                finalConflicts = helperMethods.countConflicts(previousState);
+                finalTable = previousState;
+                finalConflicts = helperMethods.countConflicts(finalTable);
                 addresult(0, currentStateHeuristic, duration, iteration);
                 System.out.println("Stuck");
-                finalTable = previousState;
                 break;
             }
 
             iteration++;
-
-        // upon finishing completion, print the final conflicts into the solution state found
-         finalConflicts = helperMethods.countConflicts(finalTable);
-
+        }
     }
-    
-}
 }

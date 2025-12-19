@@ -1,0 +1,880 @@
+test : 1
+algorthim name: SimulatedAnnealingAlgorithm
+Initial Conflicts (hard/soft): 0/4
+Final Conflicts (hard/soft): 0/0
+Final Heuristic: 0
+Execution Time (ms): 48
+Iterations: 319
+starting_temperature: 100.0
+cooling_rate: 0.9
+test : 1
+algorthim name: SimulatedAnnealingAlgorithm
+Initial Conflicts (hard/soft): 0/4
+Final Conflicts (hard/soft): 0/0
+Final Heuristic: 0
+Execution Time (ms): 10
+Iterations: 101
+starting_temperature: 100.0
+cooling_rate: 0.95
+test : 1
+algorthim name: SimulatedAnnealingAlgorithm
+Initial Conflicts (hard/soft): 0/4
+Final Conflicts (hard/soft): 0/0
+Final Heuristic: 0
+Execution Time (ms): 32
+Iterations: 299
+starting_temperature: 100.0
+cooling_rate: 0.99
+test : 1
+algorthim name: SimulatedAnnealingAlgorithm
+Initial Conflicts (hard/soft): 0/4
+Final Conflicts (hard/soft): 0/0
+Final Heuristic: 0
+Execution Time (ms): 32
+Iterations: 319
+starting_temperature: 150.0
+cooling_rate: 0.9
+test : 1
+algorthim name: SimulatedAnnealingAlgorithm
+Initial Conflicts (hard/soft): 0/4
+Final Conflicts (hard/soft): 0/0
+Final Heuristic: 0
+Execution Time (ms): 22
+Iterations: 265
+starting_temperature: 150.0
+cooling_rate: 0.95
+test : 1
+algorthim name: SimulatedAnnealingAlgorithm
+Initial Conflicts (hard/soft): 0/4
+Final Conflicts (hard/soft): 0/0
+Final Heuristic: 0
+Execution Time (ms): 20
+Iterations: 207
+starting_temperature: 150.0
+cooling_rate: 0.99
+test : 1
+algorthim name: SimulatedAnnealingAlgorithm
+Initial Conflicts (hard/soft): 0/4
+Final Conflicts (hard/soft): 0/0
+Final Heuristic: 0
+Execution Time (ms): 8
+Iterations: 101
+starting_temperature: 200.0
+cooling_rate: 0.9
+test : 1
+algorthim name: SimulatedAnnealingAlgorithm
+Initial Conflicts (hard/soft): 0/4
+Final Conflicts (hard/soft): 0/0
+Final Heuristic: 0
+Execution Time (ms): 16
+Iterations: 153
+starting_temperature: 200.0
+cooling_rate: 0.95
+test : 1
+algorthim name: SimulatedAnnealingAlgorithm
+Initial Conflicts (hard/soft): 0/4
+Final Conflicts (hard/soft): 0/0
+Final Heuristic: 0
+Execution Time (ms): 41
+Iterations: 366
+starting_temperature: 200.0
+cooling_rate: 0.99
+test : 1
+algorthim name: HillClimbingAlgorithm
+Initial Conflicts (hard/soft): 0/4
+Final Conflicts (hard/soft): 0/0
+Final Heuristic: 0
+Execution Time (ms): 1
+Iterations: 4
+test : 2
+algorthim name: SimulatedAnnealingAlgorithm
+Initial Conflicts (hard/soft): 1/10
+Final Conflicts (hard/soft): 0/3
+Final Heuristic: 150
+Execution Time (ms): 433
+Iterations: 4000
+starting_temperature: 100.0
+cooling_rate: 0.9
+test : 2
+algorthim name: SimulatedAnnealingAlgorithm
+Initial Conflicts (hard/soft): 1/10
+Final Conflicts (hard/soft): 1/3
+Final Heuristic: 1450
+Execution Time (ms): 359
+Iterations: 4000
+starting_temperature: 100.0
+cooling_rate: 0.95
+test : 2
+algorthim name: SimulatedAnnealingAlgorithm
+Initial Conflicts (hard/soft): 1/10
+Final Conflicts (hard/soft): 0/3
+Final Heuristic: 250
+Execution Time (ms): 358
+Iterations: 4000
+starting_temperature: 100.0
+cooling_rate: 0.99
+test : 2
+algorthim name: SimulatedAnnealingAlgorithm
+Initial Conflicts (hard/soft): 1/10
+Final Conflicts (hard/soft): 0/3
+Final Heuristic: 250
+Execution Time (ms): 363
+Iterations: 4000
+starting_temperature: 150.0
+cooling_rate: 0.9
+test : 2
+algorthim name: SimulatedAnnealingAlgorithm
+Initial Conflicts (hard/soft): 1/10
+Final Conflicts (hard/soft): 1/3
+Final Heuristic: 1175
+Execution Time (ms): 335
+Iterations: 4000
+starting_temperature: 150.0
+cooling_rate: 0.95
+test : 2
+algorthim name: SimulatedAnnealingAlgorithm
+Initial Conflicts (hard/soft): 1/10
+Final Conflicts (hard/soft): 0/3
+Final Heuristic: 250
+Execution Time (ms): 364
+Iterations: 4000
+starting_temperature: 150.0
+cooling_rate: 0.99
+test : 2
+algorthim name: SimulatedAnnealingAlgorithm
+Initial Conflicts (hard/soft): 1/10
+Final Conflicts (hard/soft): 0/3
+Final Heuristic: 250
+Execution Time (ms): 361
+Iterations: 4000
+starting_temperature: 200.0
+cooling_rate: 0.9
+test : 2
+algorthim name: SimulatedAnnealingAlgorithm
+Initial Conflicts (hard/soft): 1/10
+Final Conflicts (hard/soft): 0/3
+Final Heuristic: 250
+Execution Time (ms): 364
+Iterations: 4000
+starting_temperature: 200.0
+cooling_rate: 0.95
+test : 2
+algorthim name: SimulatedAnnealingAlgorithm
+Initial Conflicts (hard/soft): 1/10
+Final Conflicts (hard/soft): 0/3
+Final Heuristic: 150
+Execution Time (ms): 346
+Iterations: 4000
+starting_temperature: 200.0
+cooling_rate: 0.99
+test : 2
+algorthim name: HillClimbingAlgorithm
+Initial Conflicts (hard/soft): 1/10
+Final Conflicts (hard/soft): 0/2
+Final Heuristic: 100
+Execution Time (ms): 5
+Iterations: 10
+test : 3
+algorthim name: SimulatedAnnealingAlgorithm
+Initial Conflicts (hard/soft): 1/5
+Final Conflicts (hard/soft): 0/0
+Final Heuristic: 0
+Execution Time (ms): 9
+Iterations: 120
+starting_temperature: 100.0
+cooling_rate: 0.9
+test : 3
+algorthim name: SimulatedAnnealingAlgorithm
+Initial Conflicts (hard/soft): 1/5
+Final Conflicts (hard/soft): 0/0
+Final Heuristic: 0
+Execution Time (ms): 16
+Iterations: 203
+starting_temperature: 100.0
+cooling_rate: 0.95
+test : 3
+algorthim name: SimulatedAnnealingAlgorithm
+Initial Conflicts (hard/soft): 1/5
+Final Conflicts (hard/soft): 0/0
+Final Heuristic: 0
+Execution Time (ms): 17
+Iterations: 188
+starting_temperature: 100.0
+cooling_rate: 0.99
+test : 3
+algorthim name: SimulatedAnnealingAlgorithm
+Initial Conflicts (hard/soft): 1/5
+Final Conflicts (hard/soft): 0/0
+Final Heuristic: 0
+Execution Time (ms): 9
+Iterations: 120
+starting_temperature: 150.0
+cooling_rate: 0.9
+test : 3
+algorthim name: SimulatedAnnealingAlgorithm
+Initial Conflicts (hard/soft): 1/5
+Final Conflicts (hard/soft): 0/0
+Final Heuristic: 0
+Execution Time (ms): 58
+Iterations: 789
+starting_temperature: 150.0
+cooling_rate: 0.95
+test : 3
+algorthim name: SimulatedAnnealingAlgorithm
+Initial Conflicts (hard/soft): 1/5
+Final Conflicts (hard/soft): 0/0
+Final Heuristic: 0
+Execution Time (ms): 62
+Iterations: 713
+starting_temperature: 150.0
+cooling_rate: 0.99
+test : 3
+algorthim name: SimulatedAnnealingAlgorithm
+Initial Conflicts (hard/soft): 1/5
+Final Conflicts (hard/soft): 0/0
+Final Heuristic: 0
+Execution Time (ms): 65
+Iterations: 789
+starting_temperature: 200.0
+cooling_rate: 0.9
+test : 3
+algorthim name: SimulatedAnnealingAlgorithm
+Initial Conflicts (hard/soft): 1/5
+Final Conflicts (hard/soft): 0/0
+Final Heuristic: 0
+Execution Time (ms): 19
+Iterations: 220
+starting_temperature: 200.0
+cooling_rate: 0.95
+test : 3
+algorthim name: SimulatedAnnealingAlgorithm
+Initial Conflicts (hard/soft): 1/5
+Final Conflicts (hard/soft): 0/0
+Final Heuristic: 0
+Execution Time (ms): 42
+Iterations: 538
+starting_temperature: 200.0
+cooling_rate: 0.99
+test : 3
+algorthim name: HillClimbingAlgorithm
+Initial Conflicts (hard/soft): 1/5
+Final Conflicts (hard/soft): 0/0
+Final Heuristic: 0
+Execution Time (ms): 1
+Iterations: 6
+test : 4
+algorthim name: SimulatedAnnealingAlgorithm
+Initial Conflicts (hard/soft): 1/7
+Final Conflicts (hard/soft): 0/0
+Final Heuristic: 0
+Execution Time (ms): 47
+Iterations: 592
+starting_temperature: 100.0
+cooling_rate: 0.9
+test : 4
+algorthim name: SimulatedAnnealingAlgorithm
+Initial Conflicts (hard/soft): 1/7
+Final Conflicts (hard/soft): 0/0
+Final Heuristic: 0
+Execution Time (ms): 125
+Iterations: 1594
+starting_temperature: 100.0
+cooling_rate: 0.95
+test : 4
+algorthim name: SimulatedAnnealingAlgorithm
+Initial Conflicts (hard/soft): 1/7
+Final Conflicts (hard/soft): 0/0
+Final Heuristic: 0
+Execution Time (ms): 91
+Iterations: 1001
+starting_temperature: 100.0
+cooling_rate: 0.99
+test : 4
+algorthim name: SimulatedAnnealingAlgorithm
+Initial Conflicts (hard/soft): 1/7
+Final Conflicts (hard/soft): 0/0
+Final Heuristic: 0
+Execution Time (ms): 56
+Iterations: 734
+starting_temperature: 150.0
+cooling_rate: 0.9
+test : 4
+algorthim name: SimulatedAnnealingAlgorithm
+Initial Conflicts (hard/soft): 1/7
+Final Conflicts (hard/soft): 0/0
+Final Heuristic: 0
+Execution Time (ms): 55
+Iterations: 736
+starting_temperature: 150.0
+cooling_rate: 0.95
+test : 4
+algorthim name: SimulatedAnnealingAlgorithm
+Initial Conflicts (hard/soft): 1/7
+Final Conflicts (hard/soft): 0/0
+Final Heuristic: 0
+Execution Time (ms): 56
+Iterations: 673
+starting_temperature: 150.0
+cooling_rate: 0.99
+test : 4
+algorthim name: SimulatedAnnealingAlgorithm
+Initial Conflicts (hard/soft): 1/7
+Final Conflicts (hard/soft): 0/0
+Final Heuristic: 0
+Execution Time (ms): 45
+Iterations: 621
+starting_temperature: 200.0
+cooling_rate: 0.9
+test : 4
+algorthim name: SimulatedAnnealingAlgorithm
+Initial Conflicts (hard/soft): 1/7
+Final Conflicts (hard/soft): 0/0
+Final Heuristic: 0
+Execution Time (ms): 23
+Iterations: 301
+starting_temperature: 200.0
+cooling_rate: 0.95
+test : 4
+algorthim name: SimulatedAnnealingAlgorithm
+Initial Conflicts (hard/soft): 1/7
+Final Conflicts (hard/soft): 0/2
+Final Heuristic: 125
+Execution Time (ms): 308
+Iterations: 4000
+starting_temperature: 200.0
+cooling_rate: 0.99
+test : 4
+algorthim name: HillClimbingAlgorithm
+Initial Conflicts (hard/soft): 1/7
+Final Conflicts (hard/soft): 0/1
+Final Heuristic: 25
+Execution Time (ms): 1
+Iterations: 6
+test : 5
+algorthim name: SimulatedAnnealingAlgorithm
+Initial Conflicts (hard/soft): 1/6
+Final Conflicts (hard/soft): 0/2
+Final Heuristic: 225
+Execution Time (ms): 300
+Iterations: 4000
+starting_temperature: 100.0
+cooling_rate: 0.9
+test : 5
+algorthim name: SimulatedAnnealingAlgorithm
+Initial Conflicts (hard/soft): 1/6
+Final Conflicts (hard/soft): 0/0
+Final Heuristic: 0
+Execution Time (ms): 12
+Iterations: 182
+starting_temperature: 100.0
+cooling_rate: 0.95
+test : 5
+algorthim name: SimulatedAnnealingAlgorithm
+Initial Conflicts (hard/soft): 1/6
+Final Conflicts (hard/soft): 0/0
+Final Heuristic: 0
+Execution Time (ms): 79
+Iterations: 1032
+starting_temperature: 100.0
+cooling_rate: 0.99
+test : 5
+algorthim name: SimulatedAnnealingAlgorithm
+Initial Conflicts (hard/soft): 1/6
+Final Conflicts (hard/soft): 0/0
+Final Heuristic: 0
+Execution Time (ms): 77
+Iterations: 764
+starting_temperature: 150.0
+cooling_rate: 0.9
+test : 5
+algorthim name: SimulatedAnnealingAlgorithm
+Initial Conflicts (hard/soft): 1/6
+Final Conflicts (hard/soft): 0/0
+Final Heuristic: 0
+Execution Time (ms): 67
+Iterations: 907
+starting_temperature: 150.0
+cooling_rate: 0.95
+test : 5
+algorthim name: SimulatedAnnealingAlgorithm
+Initial Conflicts (hard/soft): 1/6
+Final Conflicts (hard/soft): 0/0
+Final Heuristic: 0
+Execution Time (ms): 40
+Iterations: 478
+starting_temperature: 150.0
+cooling_rate: 0.99
+test : 5
+algorthim name: SimulatedAnnealingAlgorithm
+Initial Conflicts (hard/soft): 1/6
+Final Conflicts (hard/soft): 0/0
+Final Heuristic: 0
+Execution Time (ms): 59
+Iterations: 764
+starting_temperature: 200.0
+cooling_rate: 0.9
+test : 5
+algorthim name: SimulatedAnnealingAlgorithm
+Initial Conflicts (hard/soft): 1/6
+Final Conflicts (hard/soft): 0/0
+Final Heuristic: 0
+Execution Time (ms): 72
+Iterations: 907
+starting_temperature: 200.0
+cooling_rate: 0.95
+test : 5
+algorthim name: SimulatedAnnealingAlgorithm
+Initial Conflicts (hard/soft): 1/6
+Final Conflicts (hard/soft): 0/0
+Final Heuristic: 0
+Execution Time (ms): 44
+Iterations: 569
+starting_temperature: 200.0
+cooling_rate: 0.99
+test : 5
+algorthim name: HillClimbingAlgorithm
+Initial Conflicts (hard/soft): 1/6
+Final Conflicts (hard/soft): 0/1
+Final Heuristic: 50
+Execution Time (ms): 2
+Iterations: 7
+test : 6
+algorthim name: SimulatedAnnealingAlgorithm
+Initial Conflicts (hard/soft): 1/8
+Final Conflicts (hard/soft): 1/1
+Final Heuristic: 1075
+Execution Time (ms): 306
+Iterations: 4000
+starting_temperature: 100.0
+cooling_rate: 0.9
+test : 6
+algorthim name: SimulatedAnnealingAlgorithm
+Initial Conflicts (hard/soft): 1/8
+Final Conflicts (hard/soft): 1/2
+Final Heuristic: 1425
+Execution Time (ms): 345
+Iterations: 4000
+starting_temperature: 100.0
+cooling_rate: 0.95
+test : 6
+algorthim name: SimulatedAnnealingAlgorithm
+Initial Conflicts (hard/soft): 1/8
+Final Conflicts (hard/soft): 0/0
+Final Heuristic: 0
+Execution Time (ms): 131
+Iterations: 1696
+starting_temperature: 100.0
+cooling_rate: 0.99
+test : 6
+algorthim name: SimulatedAnnealingAlgorithm
+Initial Conflicts (hard/soft): 1/8
+Final Conflicts (hard/soft): 1/1
+Final Heuristic: 1075
+Execution Time (ms): 357
+Iterations: 4000
+starting_temperature: 150.0
+cooling_rate: 0.9
+test : 6
+algorthim name: SimulatedAnnealingAlgorithm
+Initial Conflicts (hard/soft): 1/8
+Final Conflicts (hard/soft): 0/0
+Final Heuristic: 0
+Execution Time (ms): 66
+Iterations: 565
+starting_temperature: 150.0
+cooling_rate: 0.95
+test : 6
+algorthim name: SimulatedAnnealingAlgorithm
+Initial Conflicts (hard/soft): 1/8
+Final Conflicts (hard/soft): 0/0
+Final Heuristic: 0
+Execution Time (ms): 66
+Iterations: 641
+starting_temperature: 150.0
+cooling_rate: 0.99
+test : 6
+algorthim name: SimulatedAnnealingAlgorithm
+Initial Conflicts (hard/soft): 1/8
+Final Conflicts (hard/soft): 1/1
+Final Heuristic: 1075
+Execution Time (ms): 305
+Iterations: 4000
+starting_temperature: 200.0
+cooling_rate: 0.9
+test : 6
+algorthim name: SimulatedAnnealingAlgorithm
+Initial Conflicts (hard/soft): 1/8
+Final Conflicts (hard/soft): 0/0
+Final Heuristic: 0
+Execution Time (ms): 44
+Iterations: 565
+starting_temperature: 200.0
+cooling_rate: 0.95
+test : 6
+algorthim name: SimulatedAnnealingAlgorithm
+Initial Conflicts (hard/soft): 1/8
+Final Conflicts (hard/soft): 0/0
+Final Heuristic: 0
+Execution Time (ms): 47
+Iterations: 662
+starting_temperature: 200.0
+cooling_rate: 0.99
+test : 6
+algorthim name: HillClimbingAlgorithm
+Initial Conflicts (hard/soft): 1/8
+Final Conflicts (hard/soft): 0/3
+Final Heuristic: 375
+Execution Time (ms): 2
+Iterations: 4
+test : 7
+algorthim name: SimulatedAnnealingAlgorithm
+Initial Conflicts (hard/soft): 2/5
+Final Conflicts (hard/soft): 1/2
+Final Heuristic: 1150
+Execution Time (ms): 281
+Iterations: 4000
+starting_temperature: 100.0
+cooling_rate: 0.9
+test : 7
+algorthim name: SimulatedAnnealingAlgorithm
+Initial Conflicts (hard/soft): 2/5
+Final Conflicts (hard/soft): 0/2
+Final Heuristic: 225
+Execution Time (ms): 224
+Iterations: 4000
+starting_temperature: 100.0
+cooling_rate: 0.95
+test : 7
+algorthim name: SimulatedAnnealingAlgorithm
+Initial Conflicts (hard/soft): 2/5
+Final Conflicts (hard/soft): 0/0
+Final Heuristic: 0
+Execution Time (ms): 17
+Iterations: 307
+starting_temperature: 100.0
+cooling_rate: 0.99
+test : 7
+algorthim name: SimulatedAnnealingAlgorithm
+Initial Conflicts (hard/soft): 2/5
+Final Conflicts (hard/soft): 1/2
+Final Heuristic: 1150
+Execution Time (ms): 240
+Iterations: 4000
+starting_temperature: 150.0
+cooling_rate: 0.9
+test : 7
+algorthim name: SimulatedAnnealingAlgorithm
+Initial Conflicts (hard/soft): 2/5
+Final Conflicts (hard/soft): 0/2
+Final Heuristic: 225
+Execution Time (ms): 225
+Iterations: 4000
+starting_temperature: 150.0
+cooling_rate: 0.95
+test : 7
+algorthim name: SimulatedAnnealingAlgorithm
+Initial Conflicts (hard/soft): 2/5
+Final Conflicts (hard/soft): 0/0
+Final Heuristic: 0
+Execution Time (ms): 40
+Iterations: 685
+starting_temperature: 150.0
+cooling_rate: 0.99
+test : 7
+algorthim name: SimulatedAnnealingAlgorithm
+Initial Conflicts (hard/soft): 2/5
+Final Conflicts (hard/soft): 1/2
+Final Heuristic: 1150
+Execution Time (ms): 223
+Iterations: 4000
+starting_temperature: 200.0
+cooling_rate: 0.9
+test : 7
+algorthim name: SimulatedAnnealingAlgorithm
+Initial Conflicts (hard/soft): 2/5
+Final Conflicts (hard/soft): 0/2
+Final Heuristic: 225
+Execution Time (ms): 227
+Iterations: 4000
+starting_temperature: 200.0
+cooling_rate: 0.95
+test : 7
+algorthim name: SimulatedAnnealingAlgorithm
+Initial Conflicts (hard/soft): 2/5
+Final Conflicts (hard/soft): 0/0
+Final Heuristic: 0
+Execution Time (ms): 24
+Iterations: 410
+starting_temperature: 200.0
+cooling_rate: 0.99
+test : 7
+algorthim name: HillClimbingAlgorithm
+Initial Conflicts (hard/soft): 2/5
+Final Conflicts (hard/soft): 0/2
+Final Heuristic: 300
+Execution Time (ms): 1
+Iterations: 5
+test : 8
+algorthim name: SimulatedAnnealingAlgorithm
+Initial Conflicts (hard/soft): 0/6
+Final Conflicts (hard/soft): 0/0
+Final Heuristic: 0
+Execution Time (ms): 8
+Iterations: 148
+starting_temperature: 100.0
+cooling_rate: 0.9
+test : 8
+algorthim name: SimulatedAnnealingAlgorithm
+Initial Conflicts (hard/soft): 0/6
+Final Conflicts (hard/soft): 0/0
+Final Heuristic: 0
+Execution Time (ms): 9
+Iterations: 148
+starting_temperature: 100.0
+cooling_rate: 0.95
+test : 8
+algorthim name: SimulatedAnnealingAlgorithm
+Initial Conflicts (hard/soft): 0/6
+Final Conflicts (hard/soft): 0/0
+Final Heuristic: 0
+Execution Time (ms): 7
+Iterations: 124
+starting_temperature: 100.0
+cooling_rate: 0.99
+test : 8
+algorthim name: SimulatedAnnealingAlgorithm
+Initial Conflicts (hard/soft): 0/6
+Final Conflicts (hard/soft): 0/0
+Final Heuristic: 0
+Execution Time (ms): 9
+Iterations: 148
+starting_temperature: 150.0
+cooling_rate: 0.9
+test : 8
+algorthim name: SimulatedAnnealingAlgorithm
+Initial Conflicts (hard/soft): 0/6
+Final Conflicts (hard/soft): 0/0
+Final Heuristic: 0
+Execution Time (ms): 9
+Iterations: 148
+starting_temperature: 150.0
+cooling_rate: 0.95
+test : 8
+algorthim name: SimulatedAnnealingAlgorithm
+Initial Conflicts (hard/soft): 0/6
+Final Conflicts (hard/soft): 0/0
+Final Heuristic: 0
+Execution Time (ms): 71
+Iterations: 1220
+starting_temperature: 150.0
+cooling_rate: 0.99
+test : 8
+algorthim name: SimulatedAnnealingAlgorithm
+Initial Conflicts (hard/soft): 0/6
+Final Conflicts (hard/soft): 0/0
+Final Heuristic: 0
+Execution Time (ms): 9
+Iterations: 148
+starting_temperature: 200.0
+cooling_rate: 0.9
+test : 8
+algorthim name: SimulatedAnnealingAlgorithm
+Initial Conflicts (hard/soft): 0/6
+Final Conflicts (hard/soft): 0/0
+Final Heuristic: 0
+Execution Time (ms): 33
+Iterations: 583
+starting_temperature: 200.0
+cooling_rate: 0.95
+test : 8
+algorthim name: SimulatedAnnealingAlgorithm
+Initial Conflicts (hard/soft): 0/6
+Final Conflicts (hard/soft): 0/0
+Final Heuristic: 0
+Execution Time (ms): 30
+Iterations: 515
+starting_temperature: 200.0
+cooling_rate: 0.99
+test : 8
+algorthim name: HillClimbingAlgorithm
+Initial Conflicts (hard/soft): 0/6
+Final Conflicts (hard/soft): 0/2
+Final Heuristic: 225
+Execution Time (ms): 0
+Iterations: 3
+test : 9
+algorthim name: SimulatedAnnealingAlgorithm
+Initial Conflicts (hard/soft): 2/8
+Final Conflicts (hard/soft): 0/3
+Final Heuristic: 300
+Execution Time (ms): 241
+Iterations: 4000
+starting_temperature: 100.0
+cooling_rate: 0.9
+test : 9
+algorthim name: SimulatedAnnealingAlgorithm
+Initial Conflicts (hard/soft): 2/8
+Final Conflicts (hard/soft): 0/3
+Final Heuristic: 300
+Execution Time (ms): 227
+Iterations: 4000
+starting_temperature: 100.0
+cooling_rate: 0.95
+test : 9
+algorthim name: SimulatedAnnealingAlgorithm
+Initial Conflicts (hard/soft): 2/8
+Final Conflicts (hard/soft): 0/2
+Final Heuristic: 225
+Execution Time (ms): 225
+Iterations: 4000
+starting_temperature: 100.0
+cooling_rate: 0.99
+test : 9
+algorthim name: SimulatedAnnealingAlgorithm
+Initial Conflicts (hard/soft): 2/8
+Final Conflicts (hard/soft): 0/3
+Final Heuristic: 300
+Execution Time (ms): 226
+Iterations: 4000
+starting_temperature: 150.0
+cooling_rate: 0.9
+test : 9
+algorthim name: SimulatedAnnealingAlgorithm
+Initial Conflicts (hard/soft): 2/8
+Final Conflicts (hard/soft): 0/3
+Final Heuristic: 300
+Execution Time (ms): 228
+Iterations: 4000
+starting_temperature: 150.0
+cooling_rate: 0.95
+test : 9
+algorthim name: SimulatedAnnealingAlgorithm
+Initial Conflicts (hard/soft): 2/8
+Final Conflicts (hard/soft): 1/2
+Final Heuristic: 1150
+Execution Time (ms): 237
+Iterations: 4000
+starting_temperature: 150.0
+cooling_rate: 0.99
+test : 9
+algorthim name: SimulatedAnnealingAlgorithm
+Initial Conflicts (hard/soft): 2/8
+Final Conflicts (hard/soft): 0/3
+Final Heuristic: 300
+Execution Time (ms): 227
+Iterations: 4000
+starting_temperature: 200.0
+cooling_rate: 0.9
+test : 9
+algorthim name: SimulatedAnnealingAlgorithm
+Initial Conflicts (hard/soft): 2/8
+Final Conflicts (hard/soft): 0/3
+Final Heuristic: 300
+Execution Time (ms): 227
+Iterations: 4000
+starting_temperature: 200.0
+cooling_rate: 0.95
+test : 9
+algorthim name: SimulatedAnnealingAlgorithm
+Initial Conflicts (hard/soft): 2/8
+Final Conflicts (hard/soft): 0/0
+Final Heuristic: 0
+Execution Time (ms): 9
+Iterations: 157
+starting_temperature: 200.0
+cooling_rate: 0.99
+test : 9
+algorthim name: HillClimbingAlgorithm
+Initial Conflicts (hard/soft): 2/8
+Final Conflicts (hard/soft): 0/1
+Final Heuristic: 75
+Execution Time (ms): 1
+Iterations: 6
+test : 10
+algorthim name: SimulatedAnnealingAlgorithm
+Initial Conflicts (hard/soft): 3/5
+Final Conflicts (hard/soft): 2/4
+Final Heuristic: 2725
+Execution Time (ms): 258
+Iterations: 4000
+starting_temperature: 100.0
+cooling_rate: 0.9
+test : 10
+algorthim name: SimulatedAnnealingAlgorithm
+Initial Conflicts (hard/soft): 3/5
+Final Conflicts (hard/soft): 0/4
+Final Heuristic: 525
+Execution Time (ms): 270
+Iterations: 4000
+starting_temperature: 100.0
+cooling_rate: 0.95
+test : 10
+algorthim name: SimulatedAnnealingAlgorithm
+Initial Conflicts (hard/soft): 3/5
+Final Conflicts (hard/soft): 0/2
+Final Heuristic: 300
+Execution Time (ms): 258
+Iterations: 4000
+starting_temperature: 100.0
+cooling_rate: 0.99
+test : 10
+algorthim name: SimulatedAnnealingAlgorithm
+Initial Conflicts (hard/soft): 3/5
+Final Conflicts (hard/soft): 2/4
+Final Heuristic: 2725
+Execution Time (ms): 257
+Iterations: 4000
+starting_temperature: 150.0
+cooling_rate: 0.9
+test : 10
+algorthim name: SimulatedAnnealingAlgorithm
+Initial Conflicts (hard/soft): 3/5
+Final Conflicts (hard/soft): 0/4
+Final Heuristic: 525
+Execution Time (ms): 260
+Iterations: 4000
+starting_temperature: 150.0
+cooling_rate: 0.95
+test : 10
+algorthim name: SimulatedAnnealingAlgorithm
+Initial Conflicts (hard/soft): 3/5
+Final Conflicts (hard/soft): 0/3
+Final Heuristic: 450
+Execution Time (ms): 258
+Iterations: 4000
+starting_temperature: 150.0
+cooling_rate: 0.99
+test : 10
+algorthim name: SimulatedAnnealingAlgorithm
+Initial Conflicts (hard/soft): 3/5
+Final Conflicts (hard/soft): 2/4
+Final Heuristic: 2725
+Execution Time (ms): 272
+Iterations: 4000
+starting_temperature: 200.0
+cooling_rate: 0.9
+test : 10
+algorthim name: SimulatedAnnealingAlgorithm
+Initial Conflicts (hard/soft): 3/5
+Final Conflicts (hard/soft): 1/1
+Final Heuristic: 1150
+Execution Time (ms): 259
+Iterations: 4000
+starting_temperature: 200.0
+cooling_rate: 0.95
+test : 10
+algorthim name: SimulatedAnnealingAlgorithm
+Initial Conflicts (hard/soft): 3/5
+Final Conflicts (hard/soft): 1/3
+Final Heuristic: 1300
+Execution Time (ms): 259
+Iterations: 4000
+starting_temperature: 200.0
+cooling_rate: 0.99
+test : 10
+algorthim name: HillClimbingAlgorithm
+Initial Conflicts (hard/soft): 3/5
+Final Conflicts (hard/soft): 0/3
+Final Heuristic: 375
+Execution Time (ms): 1
+Iterations: 4
